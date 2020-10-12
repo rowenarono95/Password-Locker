@@ -1,13 +1,13 @@
 # Password_Locker
 
-#### Author: [Peris Oduol](https://github.com/PerisOduol618)
+#### Author: [Rowena Rono](https://github.com/rowenarono95)
 
 ## Description
 
-This project is a python application that manages login and signup credentials of a person for various accounts i.e. username and passwords for each account. It also stores the passwords and generates a unique password for a user if they do not want to generate new passwords by themselves.
+This is an amazing application that will help us manage our passwords and even generate new passwords for us.
 
 
-## User Stories
+## How the application works
 The user would like to.... :
 * Create an account for the application or log into the application.
 * Store my existing acounts login details for various accounts that i have registered for.
@@ -33,7 +33,7 @@ As a user of the terminal application you will be able to:
 8. Delete a saved credential
 1. Get into the **Project Repository.**
 
-Link:-> ```https://github.com/PerisOduol618/* Passwordlock```
+Link:-> ```https://github.com/rowenarono95/Password-Locker```
 
 2. Clone the project.
 
@@ -61,30 +61,28 @@ apt-get install pip3
 
 ## Running the application
 
-1. Navigate into the cloned folder using terminal and enter command `./password.py` to run the app.
+1. Navigate into the cloned folder using terminal and enter command `./user_details.py` to run the app.
 The app will open on terminal 
 
 2. Follow and answer the prompts to use the application.
 
-## Behaviour Driven Development
-| Behaviour | Input | Output |
-| :---------------- | :---------------: | ------------------: |
-|Open the application on the terminal | Run the command ```$ ./password.py```|Hello Welcome to your Password Store... <br>* ca ---  Create New Account * ha ---  Have An Account |
-|Select  ca| input username and password| Hello ```username```, Your account has been created succesfully! Your password is: ```password```|
-|Select ha  | Enter your password and username you signed up with| Abbreviations menu to help you navigate through the application|
-|Store a new credential in the application| Enter ```cc```|Enter Account, username, password<br>choose ```tp``` to enter your password or ```gp``` for the application to generate a password for you |
-|Display all stored credentials | Enter ```dc```|A list of all credentials that has been stored or ```You don't have any credentials saved yet``` |
-|Find a stored credential based on account name|Enter ```FC```| Enter the Account Name you want to search for and returns the account details|
-|Delete an existing credential that you don't want anymore|Enter ```d```|Enter the account name of the Credentials you want to delete and returns true if the account has been deleted and false if the account doesn't exist|
-|Exit the application| Enter ```d```| The application exits|
+# Behaviour Driven Development(BDD)
+| Behaviour | Input | Output|
+|-----------|-------|--------|
+|Display codes for navigation| In terminal: $./user_details.py| Hello,welcome!: su-signup, lg-Login,ex-Exit|
+|Display prompt for creating account| Enter:su| Enter you first name, last name and password|
+|Display prompt for log in| Enter:any number of your choice(1,2,3)|Enter your account name ,username and password|
+|Exit application| Enter:ex| Exit the page
 
 ## Built With
+* python3.6
 
-* [Python3.6](https://docs.python.org/3/)
+## Known Bugs 
+* some of my tests are not working
 
 ## Support and contact details
- Incase you come across errors, have questions, ideas ,concerns, or want to contribute to the application, feel free to reach me at :uduolpepe618@gmail.com
+ Incase you come across errors, have questions, ideas ,concerns, or want to contribute to the application, feel free to reach me at :rowenarono@gmail.com
 
 ### License
 
-* LICENSED UNDER  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license/MIT)
+* LICENSED UNDER  [![License: MIT](/License-MIT)](license/MIT)
