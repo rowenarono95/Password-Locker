@@ -17,8 +17,9 @@ class Credentials:
         my_option = input()
         if my_option == "1":
             person1 = Credentials(site_name = input("Account Name: "), user_name = input("Username: "), password = input("Password: "))
-            print(person1)
             details.append(person1)
+            User.view()
+
         elif my_option == "2":
             print("Do you want an account generated password")
             print("n\ 1. Yes n\ 2. No")
@@ -27,18 +28,23 @@ class Credentials:
                 pass1 = User.password(10)
                 person2 = Credentials(site_name = input("Account Name: "), user_name = input("Username: "), password = pass1)
                 details.append(person2)
-                for obj in details:
-                    print(obj.site_name, obj.user_name, obj.password)
+                User.view()
             elif option == "2":
-                person1 = Credentials(site_name = input("Account Name: "), user_name = input("Username: "), password = input("Password: "))
-                details.append(person1)
+                person2 = Credentials(site_name = input("Account Name: "), user_name = input("Username: "), password = input("Password: "))
+                details.append(person2)
+                User.view()
             else:         
                 print("Invalid input")
-        elif "3":
-            for obj in details:
-                print(obj)
+                Credentials.cred()
+
+        elif my_option == "3":
+            User.view()
+            
+
         else:
-            ("Invalid")
+            print("Invalid")
+            Credentials.cred()
+
 
     
 
@@ -69,6 +75,20 @@ class User:
         #     print("twendelee")
         # else:
         #     print("Matata")
+
+    def view():
+        print("Do you want to view your credentials?")
+        print(" 1. Yes 2. No")
+        choice = input()
+        if choice == "1":
+            print("Below are your credentials")
+            for obj in details:
+                print(obj.site_name, obj.user_name, obj.password)
+        elif choice == "2":
+            print("Bye for now")
+        else: 
+            print("Invalid input")
+            Credentials.cred()
 
 
     def signup():
