@@ -85,4 +85,4 @@ The app will open on terminal
 
 ### License
 
-* [![License: MIT](License-MIT)](License/MIT)
+* [[License: MIT]](Licence.md)
