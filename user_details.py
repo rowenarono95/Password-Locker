@@ -108,21 +108,24 @@ class User:
 
     
 
-
-print("Hello, welcome! ")
-print("Choose one of the following: lg for login, su for signup and ex for exit")
-option = input()
-
-if option == "lg":
-    print("Kindly login")
-elif option == "su":
-    User.signup()
-elif option == "ex":
-    exit()
-else:
-    print("invalid")
+    def start():
 
 
+        print("Hello, welcome! ")
+        print("Choose one of the following: lg for login, su for signup and ex for exit")
+        option = input()
+
+        if option == "lg":
+            print("Kindly login")
+        elif option == "su":
+            User.signup()
+        elif option == "ex":
+            exit()
+        else:
+            print("invalid")
 
 
 
+
+if __name__ ==  '__main__':
+    User.start()
