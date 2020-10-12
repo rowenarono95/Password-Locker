@@ -21,17 +21,22 @@ class Credentials:
             details.append(person1)
         elif my_option == "2":
             print("Do you want an account generated password")
-            print("n\1. Yes n\2. No")
+            print("n\ 1. Yes n\ 2. No")
             option = input()
             if option == "1":
                 pass1 = User.password(10)
                 person2 = Credentials(site_name = input("Account Name: "), user_name = input("Username: "), password = pass1)
-                details.append("person2")
-                print(person2.site_name, person2.user_name, person2.password)
-            else:
-                print("it's never that serious")
+                details.append(person2)
+                for obj in details:
+                    print(obj.site_name, obj.user_name, obj.password)
+            elif option == "2":
+                person1 = Credentials(site_name = input("Account Name: "), user_name = input("Username: "), password = input("Password: "))
+                details.append(person1)
+            else:         
+                print("Invalid input")
         elif "3":
-            print("Hold up")
+            for obj in details:
+                print(obj)
         else:
             ("Invalid")
 
