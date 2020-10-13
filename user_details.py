@@ -5,6 +5,10 @@ user = []
 details = []
 
 class Credentials:
+    """    
+    Class that generates new instances of user credentials.
+    """
+
     def __init__ (self, site_name, user_name, password):
         self.site_name = site_name
         self.user_name = user_name
@@ -53,10 +57,17 @@ class Credentials:
     
 
 class User:
+
+    """
+    Class that generates new instances of user details that is name and password.
+    """
     def __init__ (self, first_name, second_name, password):
         self.first_name = first_name
         self.second_name = second_name
         self.password = password
+    """
+    __init__method that allows user to add their details
+    """
 
     def signup():
         user1 = User(input("Firstname: "), input("Secondname: "), input ("Password: "))
@@ -75,6 +86,9 @@ class User:
                 User.login()
 
     def delete_cred():
+        """
+        delete method that allows user to delete credentials is they want to
+        """ 
         print("Do you want to delete your credentials?")
         print("1. Yes 2. No")
         option = input()
