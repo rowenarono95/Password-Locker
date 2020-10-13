@@ -74,6 +74,10 @@ class User:
         user.append(user1)
         User.login()
 
+    """
+    user is given an option to login into their account
+    """
+
     def login():
         print("KIndly repeat your details to login")
         my_details = User(input("Firstname: "), input("Secondname: "), input ("Password: "))
@@ -99,7 +103,9 @@ class User:
         else:
             User.view()
 
-
+    """
+    user is given an option for viewing details 
+    """
     def view():
         print("Do you want to view your credentials?")
         print(" 1. Yes 2. No")
